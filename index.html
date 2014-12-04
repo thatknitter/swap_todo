@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="todoApp">
+  <head>
+
+  </head>
+  <body>
+
+    <div class="container" ng-controller="TodoController as todoCtrl">
+      <h1>To Do for Swap</h1>
+      <form>
+        <label>Name of Task</label><input type="text" />
+        <label>Date Due</label><input type="text" />
+        <label>Description</label><input type="text" />
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Task Name</th>
+            <th>Task Description</th>
+            <th>Task Due Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
