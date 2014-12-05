@@ -6,6 +6,9 @@
     vm.tasks = [
     
     ];
+    vm.info = [
+    
+    ];
     
     vm.addNewTask = function(){
       vm.tasks.push(vm.newTask);
@@ -15,6 +18,11 @@
     vm.removeTodo = function(todo){
       var index = vm.tasks.indexOf(todo);
       vm.tasks.splice(index, 1);
+    };
+    
+    vm.addInfo = function(){
+      vm.info.push(vm.newInfo);
+      vm.newInfo = null;
     };
   });
 
