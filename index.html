@@ -11,12 +11,17 @@
       {{todoCtrl.newInfo.ship}}
       {{todoCtrl.newInfo.downstream}}
       <a href="{{todoCtrl.newInfo.url}}">The swap info</a>
+      <div ng-views>
+        
+      </div>
+      
       <div ng-include="'views/form.html'"></div>
       <div ng-include="'views/table.html'"></div>
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
