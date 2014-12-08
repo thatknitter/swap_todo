@@ -1,0 +1,22 @@
+<form>
+  <label>Which Swap?</label>
+  <input type="text" ng-model="todoCtrl.newInfo.swap">
+  <label>When does it ship?</label>
+  <input type="text" ng-model="todoCtrl.newInfo.ship">
+  <label>Who do you have?</label>
+  <input type="text" ng-model="todoCtrl.newInfo.downstream">
+  <label>What is their info post?</label>
+  <input type="text" ng-model="todoCtrl.newInfo.url">
+  <button ng-click="todoCtrl.addInfo()">
+    Add Info
+  </button></br>
+  <label>Name of Task</label>
+  <input type="text" ng-model="todoCtrl.newTask.name"/>
+  <label>Date Due</label>
+  <input type="text" ng-model="todoCtrl.newTask.due"/>
+  <label>Description</label>
+  <input type="text" ng-model="todoCtrl.newTask.desc"/>
+  <button ng-click="todoCtrl.addNewTask()">
+    Add Task
+  </button>
+</form>

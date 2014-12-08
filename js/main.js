@@ -10,13 +10,13 @@
           vm.swaptodo = data;
         })
         .error(function(err){
-          console.log('well shit' + err);
+          
         });
 
       vm.addNewTask = function() {
         $http.post(vm.swaptodothing, vm.newTask)
         .success(function(data){
-          vm.swaptodotasks[data.name] = vm.newTask;
+          vm.swaptodothing[data.name] = vm.newTask;
         });
         vm.tasks.push(vm.newTask);
         vm.newTask = null;

@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>Task Name</th>
+      <th>Task Description</th>
+      <th>Task Due Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="task in todoCtrl.tasks">
+      <td>{{task.name}}</td>
+      <td>{{task.desc}}</td>
+      <td>{{task.due}}</td>
+      <td>
+      <button ng-click="todoCtrl.removeTodo(task)">
+        Delete
+      </button></td>
+    </tr>
+  </tbody>
+</table>

@@ -11,48 +11,8 @@
       {{todoCtrl.newInfo.ship}}
       {{todoCtrl.newInfo.downstream}}
       <a href="{{todoCtrl.newInfo.url}}">The swap info</a>
-      <form>
-        <label>Which Swap?</label>
-        <input type="text" ng-model="todoCtrl.newInfo.swap">
-        <label>When does it ship?</label>
-        <input type="text" ng-model="todoCtrl.newInfo.ship">
-        <label>Who do you have?</label>
-        <input type="text" ng-model="todoCtrl.newInfo.downstream">
-        <label>What is their info post?</label>
-        <input type="text" ng-model="todoCtrl.newInfo.url">
-        <button ng-click="todoCtrl.addInfo()">
-          Add Info
-        </button></br>
-        <label>Name of Task</label>
-        <input type="text" ng-model="todoCtrl.newTask.name"/>
-        <label>Date Due</label>
-        <input type="text" ng-model="todoCtrl.newTask.due"/>
-        <label>Description</label>
-        <input type="text" ng-model="todoCtrl.newTask.desc"/>
-        <button ng-click="todoCtrl.addNewTask()">
-          Add Task
-        </button>
-      </form>
-      <table>
-        <thead>
-          <tr>
-            <th>Task Name</th>
-            <th>Task Description</th>
-            <th>Task Due Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr ng-repeat="task in todoCtrl.tasks">
-            <td>{{task.name}}</td>
-            <td>{{task.desc}}</td>
-            <td>{{task.due}}</td>
-            <td>
-            <button ng-click="todoCtrl.removeTodo(task)">
-              Delete
-            </button></td>
-          </tr>
-        </tbody>
-      </table>
+      <div ng-include="'views/form.html'"></div>
+      <div ng-include="'views/table.html'"></div>
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
